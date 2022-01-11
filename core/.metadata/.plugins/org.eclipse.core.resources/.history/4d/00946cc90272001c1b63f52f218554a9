@@ -1,0 +1,31 @@
+package day1;
+
+public class DemoDate {
+
+	public static void main(String[] args) {
+		// isLeapYear
+		
+		// daysInMonth
+		
+		
+
+	}
+
+	public int noOfDaysInMonth(int month, int year) {
+		int noOfDaysInMonth[]= 
+			{-1, 31,28, 31, 30, 31 ,30, 31, 31,30, 31 ,30 ,31 };
+		
+		if(isLeapYear(year)) {
+			noOfDaysInMonth[2]=29;
+		}
+		
+		return noOfDaysInMonth[month];
+	}
+	public static boolean isLeapYear(int year) {
+		if ((year % 400 == 0 || year % 100 != 0) && (year % 4 == 0))
+			return true;
+		else
+			return false;
+
+	}
+}

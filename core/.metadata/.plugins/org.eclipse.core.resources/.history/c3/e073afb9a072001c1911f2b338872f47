@@ -1,0 +1,19 @@
+package ex1;
+//Array, methods returing arrays etc
+public class DemoArray {
+
+	public static void main(String[] args) {
+		
+		int a[]= {4,6,7,8};
+		int sumOfElements=sumOfArrays(a);
+		
+	}
+
+	public static int sumOfArrays(int a[]) {
+		int sum=0;
+		for(int temp: a) {
+			sum+=temp;
+		}
+		return sum;
+	}
+}
