@@ -69,6 +69,31 @@ class Part {
 
 }
 
+class Inventory{
+	private static final int PARTS_SIZE=10;
+	private String inventroyName;
+	private Part[]parts;
+	
+	public Inventory(String inventroyName) {
+		this.inventroyName=inventroyName;
+		parts=new Part[PARTS_SIZE]; 
+	}
+	private int counter=0;
+	
+	public void addPart(Part part) {
+		counter++;
+		if(counter==PARTS_SIZE) {
+			System.out.println("can not add more items...");
+			return ;
+		}
+		parts[counter]=part;
+	}
+	
+	public Part[]getAllParts(){
+		return parts;
+	}
+	
+}
 public class DemoArrayOfObjects {
 
 	public static void main(String[] args) {

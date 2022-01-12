@@ -1,9 +1,0 @@
-package ex1;
-
-public class Demo {
-
-	public static void main(String[] args) {
-		//static method can be called without creating objet of that class
-		System.out.println("demo ...");
-	}
-}

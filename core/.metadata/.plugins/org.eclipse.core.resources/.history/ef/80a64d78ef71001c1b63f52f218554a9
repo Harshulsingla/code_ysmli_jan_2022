@@ -1,7 +1,0 @@
-package day1;
-
-public class Hello {
-	publi static void main2(String[] args) {
-		System.out.println("hello");
-	}
-}
