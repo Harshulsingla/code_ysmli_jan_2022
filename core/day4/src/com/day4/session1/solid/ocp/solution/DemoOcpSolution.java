@@ -26,6 +26,13 @@ class Square  extends Shape {
 	}
 }
 
+
+class Rectangle  extends Shape {
+	public void getArea() {
+		System.out.println(" i am Rectangle");
+	}
+}
+
 class ShapeProcessor {
 	//open for extension but close for modification
 	public void process(Shape shape) {
