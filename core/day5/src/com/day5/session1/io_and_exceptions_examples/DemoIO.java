@@ -1,4 +1,4 @@
-package com.day5.session1.io_examples;
+package com.day5.session1.io_and_exceptions_examples;
 
 import java.io.BufferedReader;
 import java.io.File;
