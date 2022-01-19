@@ -1,23 +1,14 @@
 package com.day7.session2.mcq.q5;
 
-class ExceptionTest {
-	
-}
-
 public class Demo {
-	public static void foo()throws Exception {
-		try {
-			throw new ArrayIndexOutOfBoundsException();
-		} catch (ArrayIndexOutOfBoundsException oob) {
-			throw new Exception(oob);
-		}
+
+	Demo(int a) {
+		System.out.println("inside ctr");
 	}
 
+	static Demo  demo = new Demo(5);
+
 	public static void main(String[] args) {
-		try {
-			foo();
-		} catch (Exception re) {
-			System.out.println(re.getCause());
-		}
+		new Demo(10);
 	}
 }
